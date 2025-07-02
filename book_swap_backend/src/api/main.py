@@ -13,4 +13,5 @@ app.add_middleware(
 
 @app.get("/")
 def health_check():
+    """PUBLIC_INTERFACE: Health check endpoint for the Book Swap backend."""
     return {"message": "Healthy"}
